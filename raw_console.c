@@ -8,8 +8,8 @@ const int HEIGHT = 10;
 
 
 /* main function */
-int main(argv, args)
-int argv; char** args;
+int main(argc, args)
+int argc; char** args;
 {
     /* loop iterate and char input */
     int i, j;
