@@ -8,14 +8,14 @@ game_init(void)
     r_src.x = 0;
     r_src.y = 64;
     
-    r_src.w = 16;
-    r_src.h = 16;
+    r_src.w = TILE_SIZE_ACTUAL;
+    r_src.h = TILE_SIZE_ACTUAL;
     
-    r_dest.x = 64;
-    r_dest.y = 64;
+    r_dest.x = TILE_SIZE;
+    r_dest.y = TILE_SIZE;
     
-    r_dest.w = 64;
-    r_dest.h = 64;
+    r_dest.w = TILE_SIZE;
+    r_dest.h = TILE_SIZE;
 } /* game_init() */
 
 
@@ -24,27 +24,23 @@ extern void
 game_update(void) 
 {
     if(Input.left) {
-        printf("left\n");
         Input.left = 0;
-        if (r_dest.x >= 64) r_dest.x -= 64;
+        if (r_dest.x >= TILE_SIZE) r_dest.x -= TILE_SIZE;
     }
     
     if(Input.right) {
-        printf("right\n");
         Input.right = 0;
-        if (r_dest.x <= (WINDOW_WIDTH - 128)) r_dest.x += 64;
+        if (r_dest.x <= (WINDOW_WIDTH - (2*TILE_SIZE))) r_dest.x += TILE_SIZE;
     }
     
     if(Input.up) {
-        printf("up\n");
         Input.up = 0;
-        if (r_dest.y >= 64) r_dest.y -= 64;
+        if (r_dest.y >= TILE_SIZE) r_dest.y -= TILE_SIZE;
     }
     
     if(Input.down) {
-        printf("down\n");
         Input.down = 0;
-        if (r_dest.y <= (WINDOW_HEIGHT - 128)) r_dest.y += 64;
+        if (r_dest.y <= (WINDOW_HEIGHT - (2*TILE_SIZE))) r_dest.y += TILE_SIZE;
     }
 } /* game_update() */
 

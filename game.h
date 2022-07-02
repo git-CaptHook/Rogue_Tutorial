@@ -43,7 +43,10 @@ typedef struct
 
 
 /* Configuration */
-const int TILE_SIZE = 64;
+const char* TILE_IMAGE_FILE  = "src/dw.png";
+const int   TILE_SIZE_ACTUAL = 16;
+const int   TILE_SIZE_SCALE  =  4;
+const int   TILE_SIZE = TILE_SIZE_SCALE * TILE_SIZE_ACTUAL;
 
 const char* WINDOW_TITLE = "C_Rogue";
 const int   WINDOW_WIDTH = 16 * TILE_SIZE;
