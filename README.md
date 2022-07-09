@@ -14,4 +14,4 @@ Day 0 + 1
 
 Day 2 + 3
 
-![Screenshot](https://imgur.com/a/bPNWQh9)
+![Screenshot]([https://imgur.com/a/bPNWQh9](https://i.imgur.com/ZzTGcYG.gif))
