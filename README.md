@@ -14,10 +14,10 @@ Day 0 + 1
 
 Day 2 + 3
 
-Create random rooms
-Add Walls
-Add potential 'doors' and 'hallways'
-Change those doors and hallways to floors
-Repeat wall adding function to fill holes
+-Create random rooms
+-Add Walls
+-Add potential 'doors' and 'hallways'
+-Change those doors and hallways to floors
+-Repeat wall adding function to fill holes
 
 ![Screenshot](https://i.imgur.com/ZzTGcYG.gif)
